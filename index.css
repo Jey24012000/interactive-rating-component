@@ -1,0 +1,147 @@
+:root{
+    --button-color: hsl(25, 97%, 53%);
+    --title-color: hsl(0, 0%, 100%);
+    --main-color:  hsl(216, 12%, 8%);
+    --info--color: hsl(217, 12%, 63%);
+    --numbers-color: hsl(216, 12%, 54%);
+    --card-color: hsl(213, 19%, 18%);
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.5rem;
+    font-family: 'Overpass', sans-serif;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    padding: 16px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    min-width: 260px;
+    max-width: 420px;
+    height: auto;
+    padding: 16px;
+    background-color: var(--card-color);
+}
+.card-primary{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-section{
+    align-self: flex-start;
+    width: 40px;
+    height: 40px;
+    margin: 16px;
+    background-color: var(--numbers-button-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+.logo-section img{
+    width: 12px;
+    height: 12px;
+    
+}
+.info-section{
+    width: 100%;
+    padding: 0 16px;
+    
+}
+.info-section h1{
+    color: var(--title-color);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.info-section p{
+    color: var(--title-color);
+    font-weight: 400;
+    opacity: 0.8;
+    margin-bottom: 24px;
+}
+.numbers{
+    width: 90%;
+    height: 46px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+}
+.numbers button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--numbers-color);
+    font-weight: 700;
+}
+.numbers button:hover{
+    background-color: var(--button-color);
+    color: var(--title-color);
+}
+.numbers button:active{
+    background-color: var(--numbers-color);
+}
+#enviar{
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--button-color);
+    color: var(--title-color);
+    border: none;
+    margin-bottom: 16px;
+}
+#enviar:hover{
+    background-color: var(--title-color);
+    color: var(--button-color);
+    
+}
+.card-secondary{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: none; 
+}
+
+.first-section{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.first-section p{
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    margin-top: 16px;
+    padding: 8px;
+    background-color: var(--main-color);
+    color: var(--button-color);
+    border-radius: 20px;
+}
+.second-section h1{
+    color: var(--title-color);
+    margin-bottom: 16px;
+}
+.second-section p{
+    color: var(--title-color);
+    opacity: 0.8;
+    margin-bottom: 16px;
+}
