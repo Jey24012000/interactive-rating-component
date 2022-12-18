@@ -78,34 +78,54 @@ body{
 .numbers{
     width: 90%;
     height: 46px;
+    margin: 20px;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     margin-bottom: 16px;
 }
-.numbers button{
+.numbers fieldset{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+}
+
+.numbers input{
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+}
+.numbers label{
     width: 40px;
     height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
     border-radius: 50%;
     border: none;
     background-color: var(--main-color);
     color: var(--numbers-color);
     font-weight: 700;
+    
 }
-.numbers button:hover{
+.numbers label:hover{
     background-color: var(--button-color);
     color: var(--title-color);
 }
-.numbers button:active{
+
+.numbers label:active{
     background-color: var(--numbers-color);
-}
-#enviar{
-    width: 90%;
+} 
+.numbers #enviar{
+    width: 100%;
     height: 40px;
+    padding: 12px;
     border-radius: 20px;
     background-color: var(--button-color);
     color: var(--title-color);
     border: none;
-    margin-bottom: 16px;
+    margin: 16px 0;
 }
 #enviar:hover{
     background-color: var(--title-color);
