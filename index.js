@@ -1,37 +1,23 @@
-
 let inicio = document.getElementById("inicio");
+let valorForm = document.getElementsByName('button');
 let respuesta = document.getElementById("respuesta");
-let oneBtn = document.getElementById("uno");
-let twoBtn = document.getElementById("dos");
-let threeBtn = document.getElementById("tres");
-let fourBtn = document.getElementById("cuatro");
-let fiveBtn = document.getElementById("cinco");
 let numero = document.getElementById("number");
-let valorSpan = "";
+let valueForm = 0;
 
-// Dar valores para el span
-oneBtn.addEventListener('click', e =>{
-    valorSpan = "1";
-})
-twoBtn.addEventListener('click', e=>{
-    valorSpan = "2"
-})
-threeBtn.addEventListener('click',e=>{
-    valorSpan = "3";
-})
-fourBtn.addEventListener('click', e=>{
-    valorSpan = "4";
-})
-fiveBtn.addEventListener('click', e=>{
-    valorSpan = "5";
-})
-
-// Ejecutar sumbit
+function valorRadio () {
+    for (let i = 0; i < valorForm.length; i++){
+        if(valorForm[i].checked){
+            valueForm = valorForm[i].value;
+            break;
+        }
+    }
+}
 
 function newView(contenedor){
 
     contenedor.addEventListener('click',e =>{
-        numero.innerText = valorSpan;
+        valorRadio();
+        numero.innerText = valueForm;
         inicio.style.display = "none";
         respuesta.style.display = "block";
 
